@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IO Chat</title>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="stylesheet" href="./assets/css/ionicons.min.css"/>
+  <link rel="stylesheet" href="./assets/css/jquery-ui.min.css"/>
+</head>
+<body>
+  <div class="main">
+    <div class="app-title">
+      <h1>Chat App</h1>
+      <p class="signout">Sign out</p>
+    </div>
+    <div class="chat-container">
+      <div class="chat-group">
+        <h3>Groups</h3>
+        <div class="group-list">
+          <a class="group-nav" data-room="general">
+            <p class="group active">General</p>
+          </a>
+          <a class="group-nav"  data-room="socketio">
+            <p class="group">SocketIO Session</p>
+          </a>
+          <a class="group-nav" data-room="news">
+            <p class="group">News</p>
+          </a>
+        </div>
+      </div>
+      <div class="login">
+        <div class="chat-input">
+          <div class="login-message">
+            <p class="msg-notice">Input username to begin chat.</p>
+          </div>
+          <form id="login-form">
+            <input placeholder="username" name="" id="login"></input>
+            <button type="submit">Start</button>
+          </form>
+        </div>
+      </div>
+      <div class="chat-room">
+        <div class="chat-header">
+          <h3>IO Chat</h3>
+          <p class="chat-settings">Leave</p>
+        </div>
+        <div class="chat-main">
+            <div class="chat-box room-general">
+            </div>
+            <div class="chat-box room-socketio">
+            </div>
+            <div class="chat-box room-news">
+            </div>
+            <div class="chat-typing">
+              someone is typing...
+            </div>
+          <div class="chat-input">
+            <form id="chat-form" data-id="chat">
+              <textarea name="" id="composer" rows="2"></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="chat-online">
+        <h3>Online</h3>
+        <div class="user-list user-general"></div>
+        <div class="user-list user-socketio"></div>
+        <div class="user-list user-news"></div>
+      </div>
+    </div>
+  </div>
+  <div id="dialog">
+    <p class="modal-message"></p>
+  </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./assets/js/jquery-1.11.1.min.js"></script>
+<script src="./assets/js/jquery-ui.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</html>
