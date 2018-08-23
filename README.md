@@ -1,12 +1,13 @@
-# Koa 2 Restful Boilerplate
+# Koa2 SocketIO
 
 ## Description
 
-Koa 2 RESTful API using :
+Chat App using :
 
 * Koa 2
-* Mongodb + Mongoose
-* Babel
+* SocketIO
+* jQuery
+* SCSS
 * Asynchronous Functions (Async/Await)
 
 ## Running
@@ -34,8 +35,6 @@ Building and Running Production Server
 ```
 npm run prod
 ```
-
-**Note : Please make sure your MongoDB is running before using `npm start` or `npm run prod`**
 
 ## License
 
