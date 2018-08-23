@@ -123,7 +123,7 @@ $(() => {
             $('.room-'+room_div).show();
             $('.room-'+data.room).children().remove();
             $('.user-'+room_div).show();
-            $('.chat-settings').hide();
+            $('.chat-settings').hide();            
           });
           $(this).dialog( "close" );
         },
