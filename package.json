@@ -1,26 +1,15 @@
 {
-  "name": "koa-restful-boilerplate",
-  "description": "Koa 2 RESTful API boilerplate",
+  "name": "koa-socketio",
+  "description": "Chat App",
   "version": "1.0.0",
-  "author": "Thomas Blanc-Hector",
+  "author": "Jariel Balberona",
   "keywords": [
     "koa",
-    "rest",
-    "api",
-    "mongodb",
-    "mongoose",
+    "socketio",
     "async",
     "es7"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsnomad/koa-restful-boilerplate.git"
-  },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jsnomad/koa-restful-boilerplate/issues"
-  },
-  "homepage": "https://github.com/jsnomad/koa-restful-boilerplate#readme",
   "main": "server/index.js",
   "scripts": {
     "start": "nodemon server/ --exec babel-node",
@@ -34,17 +23,14 @@
     "babel-polyfill": "^6.5.0",
     "glob": "^7.1.2",
     "jquery": "^3.3.1",
-    "jsonwebtoken": "^8.1.1",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-helmet": "^3.3.0",
-    "koa-jwt": "^3.3.0",
     "koa-logger": "^3.1.0",
     "koa-morgan": "^1.0.1",
     "koa-mount": "^3.0.0",
     "koa-router": "^7.3.0",
     "koa-static": "^5.0.0",
-    "mongoose": "^5.0.1",
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
