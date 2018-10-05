@@ -2,8 +2,8 @@ body {
   margin: 0 auto;
   color: #fff; }
   body .main {
-    margin: 5rem auto;
-    width: calc(100vw - 20%);
+    margin: 7rem auto;
+    width: calc(100vw - 25%);
     min-height: calc(100vh - 40rem);
     max-height: calc(100vh - 10rem); }
     body .main .app-title {
